@@ -6,8 +6,11 @@
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
+        "runtime": "python3.9",
         "includeFiles": [
-          "api/requirements.txt"
+          "api/requirements.txt",
+          "meliautoprofit/**",
+          "config/**"
         ]
       }
     }
@@ -27,7 +30,7 @@
     }
   ],
   "env": {
-    "PYTHONPATH": ".",
+    "PYTHONPATH": ".:meliautoprofit:config",
     "PYTHONUNBUFFERED": "1"
   }
 } 
