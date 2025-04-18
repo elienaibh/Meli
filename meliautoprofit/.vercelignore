@@ -1,0 +1,27 @@
+# Environments and venv
+.env
+.venv
+venv/
+ENV/
+
+# Tests and docs
+tests/
+docs/
+
+# Development files
+__pycache__/
+*.py[cod]
+*.log
+*.db
+*.sqlite3
+
+# Databases
+database/*.db
+
+# Specific files
+build.sh
+run_tests.py
+setup_database.py
+gerar_relatorio.py
+preparar_lancamento.py
+gerar_dependencias.py 

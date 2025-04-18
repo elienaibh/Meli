@@ -1,0 +1,13 @@
+{
+  "name": "meliautoprofit",
+  "version": "1.0.0",
+  "description": "Sistema automatizado de e-commerce para Mercado Livre",
+  "main": "api/index.py",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

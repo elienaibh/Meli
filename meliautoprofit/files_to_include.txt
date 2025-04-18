@@ -1,0 +1,14 @@
+.gitignore
+Procfile
+README.md
+requirements.txt
+vercel.json
+app/main.py
+app/config.py
+app/api/
+app/controllers/
+app/models/
+app/rotas/
+app/services/
+config/
+database/ 

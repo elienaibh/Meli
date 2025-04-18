@@ -1,0 +1,67 @@
+{
+    "projectName": "MeliAutoProfit",
+    "description": "Sistema de e-commerce automatizado para renda passiva via dropshipping no Mercado Livre.",
+    "phases": [
+      {
+        "phase": "Fase 1: Planejamento e Configuração",
+        "status": "Concluída",
+        "tasks": [
+          {"task": "Criar visao_geral.txt", "completed": true},
+          {"task": "Definir Objetivo e Estratégia", "completed": true},
+          {"task": "Pesquisar Mercado", "completed": true},
+          {"task": "Configurar APIs", "completed": true},
+          {"task": "Criar estrutura_projeto.json", "completed": true}
+        ],
+        "deliverables": ["visao_geral.txt", "objetivo_estrategia.md", "produtos_pesquisa.csv", "fornecedores.md", "config/api_mercadolivre.py", "config/api_mercadopago.py", "config/api_cjdropshipping.py", "config/api_spocket.py", "config/api_telegram.py", ".env.example", "gerar_estrutura.py", "estrutura_projeto.json"],
+        "last_updated": "2025-04-14"
+      },
+      {
+        "phase": "Fase 2: Desenvolvimento",
+        "status": "Concluída",
+        "tasks": [
+          {"task": "Configurar Ambiente", "completed": true},
+          {"task": "Estruturar Backend", "completed": true},
+          {"task": "Integrar APIs", "completed": true},
+          {"task": "Configurar Banco", "completed": true},
+          {"task": "Implementar Listagem", "completed": true}
+        ],
+        "deliverables": ["meliautoprofit/.gitignore", "meliautoprofit/requirements.txt", "meliautoprofit/.env.example", "meliautoprofit/gerar_dependencias.py", "meliautoprofit/config/api_mercadolivre.py", "meliautoprofit/config/api_mercadopago.py", "meliautoprofit/config/api_cjdropshipping.py", "meliautoprofit/config/api_spocket.py", "meliautoprofit/config/api_telegram.py", "meliautoprofit/app/main.py", "meliautoprofit/app/config.py", "meliautoprofit/database/database.py", "meliautoprofit/database/models.py", "meliautoprofit/database/__init__.py", "meliautoprofit/app/api/mercado_livre.py", "meliautoprofit/app/api/mercado_pago.py", "meliautoprofit/app/api/fornecedor.py", "meliautoprofit/app/api/telegram.py", "meliautoprofit/app/api/__init__.py", "meliautoprofit/app/services/listagem.py", "meliautoprofit/app/controllers/listagem_controller.py", "meliautoprofit/app/controllers/__init__.py", "meliautoprofit/database/repository.py", "meliautoprofit/setup_database.py"],
+        "last_updated": "2025-04-15"
+      },
+      {
+        "phase": "Fase 3: Testes e Depuração",
+        "status": "Concluída",
+        "tasks": [
+          {"task": "Planejar Testes", "completed": true},
+          {"task": "Executar Testes", "completed": true},
+          {"task": "Depurar", "completed": true}
+        ],
+        "deliverables": ["meliautoprofit/tests/__init__.py", "meliautoprofit/tests/conftest.py", "meliautoprofit/tests/mocks.py", "meliautoprofit/tests/test_listagem_service.py", "meliautoprofit/tests/test_listagem_controller.py", "meliautoprofit/tests/plano_testes.md", "meliautoprofit/run_tests.py"],
+        "last_updated": "2025-04-16"
+      },
+      {
+        "phase": "Fase 4: Lançamento e Monitoramento",
+        "status": "Pendente",
+        "tasks": [
+          {"task": "Preparar Lançamento", "completed": false},
+          {"task": "Lançar Loja", "completed": false},
+          {"task": "Configurar Monitoramento", "completed": false}
+        ],
+        "deliverables": [],
+        "last_updated": null
+      },
+      {
+        "phase": "Fase 5: Manutenção e Escalabilidade",
+        "status": "Pendente",
+        "tasks": [
+          {"task": "Configurar Manutenção", "completed": false},
+          {"task": "Escalar Produtos", "completed": false},
+          {"task": "Otimizar Preços", "completed": false},
+          {"task": "Documentar Progresso", "completed": false}
+        ],
+        "deliverables": [],
+        "last_updated": null
+      }
+    ],
+    "last_updated": "2025-04-16"
+  }

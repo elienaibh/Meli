@@ -1,0 +1,7 @@
+MeliAutoProfit - Visão Geral
+Objetivo: Loja automatizada no Mercado Livre, meta R$15.000/mês.
+Stack: Python 3.10, FastAPI, PostgreSQL, APIs (Mercado Livre, Mercado Pago, CJ Dropshipping, Telegram).
+Arquitetura: MVC (controllers: listagem/pedidos, models: Produto/Pedido, services: APIs).
+Público: Consumidores brasileiros, produtos R$50-500.
+GUI: Dashboard Flask (lucros, pedidos, erros).
+Estado: Fase 1 - Planejamento e configuração. 
