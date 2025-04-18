@@ -2,14 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.py",
+      "src": "meliautoprofit/app/main.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "api/index.py"
+      "src": "/webhook/mercadolivre",
+      "dest": "meliautoprofit/app/main.py"
+    },
+    {
+      "src": "/auth/callback",
+      "dest": "meliautoprofit/app/main.py"
+    },
+    {
+      "src": "/",
+      "dest": "meliautoprofit/app/main.py"
     }
   ]
 } 
