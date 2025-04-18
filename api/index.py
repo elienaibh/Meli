@@ -53,6 +53,24 @@ async def root():
     """Endpoint de teste/healthcheck"""
     return {"status": "ok", "message": "MeliAutoProfit API is running"}
 
+@app.get("/webhook/mercadolivre")
+async def webhook_info():
+    """Informações sobre o webhook do Mercado Livre"""
+    return {
+        "status": "ok",
+        "message": "Este é o endpoint para webhooks do Mercado Livre",
+        "usage": {
+            "method": "POST",
+            "content_type": "application/json",
+            "description": "Use este endpoint para receber notificações do Mercado Livre",
+            "example_payload": {
+                "order_id": "123456789",
+                "topic": "orders_v2",
+                "resource": "/orders/123456789"
+            }
+        }
+    }
+
 @app.post("/webhook/mercadolivre")
 async def handle_order(request: Request):
     """Handler para webhooks do Mercado Livre"""
