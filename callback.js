@@ -1,4 +1,5 @@
 // api/callback.js
+// Função serverless para Vercel
 export default async function handler(req, res) {
   // Permitir CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -21,15 +22,9 @@ export default async function handler(req, res) {
       });
     }
 
-    // SUBSTITUA PELOS SEUS DADOS DO PORTAL DE PARCEIROS
-    const APP_ID = process.env.NUVEMSHOP_APP_ID || 'SEU_APP_ID_AQUI';
-    const CLIENT_SECRET = process.env.NUVEMSHOP_CLIENT_SECRET || 'SEU_CLIENT_SECRET_AQUI';
-    
-    if (APP_ID === 'SEU_APP_ID_AQUI' || CLIENT_SECRET === 'SEU_CLIENT_SECRET_AQUI') {
-      return res.status(500).json({ 
-        error: 'Credenciais não configuradas. Configure as variáveis de ambiente.' 
-      });
-    }
+    // Suas credenciais do Portal de Parceiros
+    const APP_ID = process.env.NUVEMSHOP_APP_ID || '19190';
+    const CLIENT_SECRET = process.env.NUVEMSHOP_CLIENT_SECRET || 'a2fd713e74bf1d526c7e0514774cbee5f390a8302c9195b0';
 
     console.log('Trocando código por access_token...');
     
